@@ -22,8 +22,7 @@ public class ShowMenu {
 
             switch (menu.menuTotalPriceEnter()) {
                 case 1:
-                    //dataCreator.showAllVazes();
-                   // dataCreator.showAllData();
+                    cleansFabric.showAllData();
                     break;
                 case 2:
                    // dataCreator.showAllBouqets();

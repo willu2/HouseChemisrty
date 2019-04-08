@@ -15,38 +15,15 @@ public class MenuBuillder {
         System.out.println("Enter position :> ");
     }
 
-   /* public void flowersShow(){
-        System.out.println("What flower bouquet do you want: ");
-        for (int i = 0; i < FlowerEntity.VazonName.values().length; i++){
-            System.out.println((i+1) + " :> " + FlowerEntity.VazonName.values()[i] + "  |");
-        }
-    }
-
-    public void flowersShowBouqet(int i, int counts){
-            System.out.println((i+1) + " :> " + FlowerEntity.VazonName.values()[i] + "  |");
-        }
-*/
-
-    public void bouqetMenu(){
-        System.out.println("Enter value: ");
-        System.out.println(" 1 :> ADD Flower ");
-        System.out.println(" 2 :> Remove Flower ");
-    }
 
     public void enterNumberMenu(){
         System.out.println("Enter number of flower: ");
-    }
-    public void yourBouqet(){
-        System.out.println("Your bouqet: ");
     }
 
     public void priceEnter(){
         System.out.println("Enter your money count:");
     }
 
-    public void sortShow(){
-        System.out.println("Sort by price:");
-    }
 
     public int menuTotalPriceEnter(){
         int visitorPrice = 0;
