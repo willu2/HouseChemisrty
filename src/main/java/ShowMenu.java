@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 public class ShowMenu {
 
     MenuBuillder menu = new MenuBuillder();
-    //DataCreator dataCreator = new DataCreator();
+    CleansFabric cleansFabric = new CleansFabric();
 
     boolean exit = false;
 

@@ -46,7 +46,7 @@ public abstract class ItemEntity {
 
     @Override
     public String toString() {
-        return "Vazone [price=" + price + "]";
+        return "Cleener [price=" + price + "]";
     }
 
     public int compareTo(ItemEntity o) {
