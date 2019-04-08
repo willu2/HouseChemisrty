@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 public class CleansFabric {
 
@@ -25,25 +26,28 @@ public class CleansFabric {
     }
 
     private void createBase(){
+        roomSet = new RoomSet();
+        windowSet = new WindowSet();
+        bathRoomSet = new BathRoomSet();
 
         for (int i = 0; i < roomSet.getLocalList().size(); i++){
             roomSet.setName((String) roomSet.getLocalList().get(i));
             roomSet.setType(roomSet.getClType());
-            roomSet.setPrice(roomSet.ranDig(40));
+            roomSet.setPrice(ranDig(40));
             allData.add(roomSet);
         }
 
         for (int i = 0; i < windowSet.getWindowsList().size(); i++){
             windowSet.setName((String) windowSet.getLocalList().get(i));
             windowSet.setType(windowSet.getClType());
-            windowSet.setPrice(windowSet.ranDig(60));
+            windowSet.setPrice(ranDig(60));
             allData.add(windowSet);
         }
 
         for (int i = 0; i < bathRoomSet.getBathList().size(); i++){
             bathRoomSet.setName((String) bathRoomSet.getLocalList().get(i));
             bathRoomSet.setType(bathRoomSet.getClType());
-            bathRoomSet.setPrice(bathRoomSet.ranDig(100));
+            bathRoomSet.setPrice(ranDig(100));
             allData.add(bathRoomSet);
         }
 
@@ -63,5 +67,9 @@ public class CleansFabric {
         System.out.print(" ||_price: > " + itemEntity.getPrice() + " $");
         System.out.println();
     }
-
+    public int ranDig(int ran){
+        Random random = new Random();
+        int digit = random.nextInt(ran) + 12;
+        return digit;
+    }
 }
