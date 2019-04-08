@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class WindowSet extends ItemEntity {
+public class WindowSet extends ItemEntity implements databBaseImpl {
 
-    List windowsList;
+    private List windowsList;
 
     private String windowCL = "WindowCleaner. ";
 
@@ -17,7 +17,7 @@ public class WindowSet extends ItemEntity {
         windowsList = new ArrayList<String>();
     }
 
-    @Override
+   // @Override
     public void createChemisrtySet(int counts) {
         for(int i = 0; i < counts; i++){
             windowsList.add(windowCL + i);

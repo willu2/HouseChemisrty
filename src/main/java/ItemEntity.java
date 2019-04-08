@@ -7,10 +7,6 @@ public abstract class ItemEntity {
     public String name;
     public String type;
 
-    public abstract void createChemisrtySet(int i);
-    public abstract String getClType();
-    public abstract List getLocalList();
-
     public ItemEntity(String name, String type, Integer price) {
 
         this.name = name;

@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class BathRoomSet extends ItemEntity {
+public class BathRoomSet extends ItemEntity implements databBaseImpl{
 
-    List bathList;
+    private List bathList;
 
     private String bathCL = "BathCleaner. ";
 
@@ -17,7 +17,7 @@ public class BathRoomSet extends ItemEntity {
         bathList = new ArrayList<String>();
     }
 
-    @Override
+   // @Override
     public void createChemisrtySet(int counts) {
         for(int i = 0; i < counts; i++){
             bathList.add(bathCL + i);
