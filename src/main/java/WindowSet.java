@@ -7,15 +7,32 @@ public class WindowSet extends ItemEntity {
 
     private String windowCL = "WindowCleaner. ";
 
+    public WindowSet() {
+        super();
+        windowsList = new ArrayList<String>();
+    }
+
     public WindowSet(String name, String type, Integer price) {
         super(name, type, price);
         windowsList = new ArrayList<String>();
     }
 
     @Override
-    public void createChemisrtySet() {
-        for(int i = 0; i < 10; i++){
+    public void createChemisrtySet(int counts) {
+        for(int i = 0; i < counts; i++){
             windowsList.add(windowCL + i);
         }
+    }
+
+    public List getWindowsList() {
+        return windowsList;
+    }
+
+    public String getClType() {
+        return windowCL;
+    }
+
+    public List getLocalList() {
+        return windowsList;
     }
 }

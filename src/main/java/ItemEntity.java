@@ -1,24 +1,15 @@
+import java.util.List;
 import java.util.Random;
 
 public abstract class ItemEntity {
 
-    /*enum VazonName {
-
-        Vazon_6;
-        public static VazonItem.VazonName getRandomType() {
-            Random random = new Random();
-            return values()[random.nextInt(values().length)];
-        }
-    }
-    public VazonName getVazonName() {
-        return vazonName;
-    }
-    private VazonItem.VazonName vazonName;*/
-
     public Integer price;
-
     public String name;
     public String type;
+
+    public abstract void createChemisrtySet(int i);
+    public abstract String getClType();
+    public abstract List getLocalList();
 
     public ItemEntity(String name, String type, Integer price) {
 
@@ -37,10 +28,10 @@ public abstract class ItemEntity {
     public void setName(String name) {
         this.name = name;
     }
-
     public String getType() {
         return type;
     }
+
     public void setType(String type) {
         this.type = type;
     }
@@ -61,8 +52,6 @@ public abstract class ItemEntity {
     public int compareTo(ItemEntity o) {
         return this.getPrice().compareTo(o.getPrice());
     }
-
-    public abstract void createChemisrtySet();
 
     public int ranDig(int ran){
         Random random = new Random();
