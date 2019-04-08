@@ -6,8 +6,8 @@ public class MenuBuillder {
 
     public void mainManu(){
         System.out.println("Menu :> ");
-        System.out.println(" 1 :> Show all stuffs ");
-        System.out.println(" 2 :> Show all bouquets  >>> ");
+        System.out.println(" 1 :> Show all cleener sets ");
+        System.out.println(" 2 :> Choose cleener sets  >>> ");
         System.out.println(" 3 :> Createte bouquet  >>> ");
         //System.out.println(" 4 :> Show by price >>> ");
         System.out.println(" 8 :> Exit ");
@@ -16,8 +16,14 @@ public class MenuBuillder {
     }
 
 
-    public void enterNumberMenu(){
-        System.out.println("Enter number of flower: ");
+    public void enterWhatMenu(){
+        System.out.println("What do you want to clean: ");
+    }
+
+    public void itemsMenu(){
+        System.out.println("1 :> Room ");
+        System.out.println("2 :> BathRoom ");
+        System.out.println("3 :> Windows ");
     }
 
     public void priceEnter(){

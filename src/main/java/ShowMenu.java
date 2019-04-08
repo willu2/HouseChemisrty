@@ -25,15 +25,17 @@ public class ShowMenu {
                     cleansFabric.showAllData();
                     break;
                 case 2:
-                   // dataCreator.showAllBouqets();
+                    menu.enterWhatMenu();
+                    menu.itemsMenu();
+                    item = menu.menuTotalPriceEnter();
+                    price = menu.menuTotalPriceEnter();
                     break;
                 case 3:
-                    //dataCreator.flowersShow();
+                    menu.enterWhatMenu();
+                    menu.itemsMenu();
                     item = menu.menuTotalPriceEnter();
-                    menu.enterNumberMenu();
                     price = menu.menuTotalPriceEnter();
                    // dataCreator.flowersShowBouqet(item, price);
-
 
                     break;
                 case 4:
