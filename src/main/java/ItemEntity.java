@@ -1,13 +1,9 @@
 import java.util.Random;
 
-public class ItemEntity {
+public abstract class ItemEntity {
 
     /*enum VazonName {
-        Vazon_1,
-        Vazon_2,
-        Vazon_3,
-        Vazon_4,
-        Vazon_5,
+
         Vazon_6;
         public static VazonItem.VazonName getRandomType() {
             Random random = new Random();
@@ -20,16 +16,33 @@ public class ItemEntity {
     private VazonItem.VazonName vazonName;*/
 
     public Integer price;
+
     public String name;
     public String type;
 
+    public ItemEntity(String name, String type, Integer price) {
 
-    public ItemEntity( Integer price) {
-
+        this.name = name;
+        this.type = type;
         this.price = price;
     }
 
     public ItemEntity() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+    public void setType(String type) {
+        this.type = type;
     }
 
     public Integer getPrice() {
@@ -47,5 +60,13 @@ public class ItemEntity {
 
     public int compareTo(ItemEntity o) {
         return this.getPrice().compareTo(o.getPrice());
+    }
+
+    public abstract void createChemisrtySet();
+
+    public int ranDig(int ran){
+        Random random = new Random();
+        int digit = random.nextInt(ran) + 12;
+        return digit;
     }
 }
