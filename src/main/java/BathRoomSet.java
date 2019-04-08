@@ -1,38 +1,22 @@
-import java.util.ArrayList;
-import java.util.List;
 
 public class BathRoomSet extends ItemEntity implements databBaseImpl{
 
-    private List bathList;
-
-    private String bathCL = "BathCleaner. ";
+    private String bathCL = "BathCleaner-";
+    private String bathTP = "Bath ";
 
     public BathRoomSet() {
         super();
-        bathList = new ArrayList<String>();
     }
 
     public BathRoomSet(String name, String type, Integer price) {
         super(name, type, price);
-        bathList = new ArrayList<String>();
-    }
-
-   // @Override
-    public void createChemisrtySet(int counts) {
-        for(int i = 0; i < counts; i++){
-            bathList.add(bathCL + i);
-        }
-    }
-
-    public List getBathList() {
-        return bathList;
     }
 
     public String getClType() {
         return bathCL;
     }
 
-    public List getLocalList() {
-        return bathList;
+    public String getTP() {
+        return bathTP;
     }
 }
