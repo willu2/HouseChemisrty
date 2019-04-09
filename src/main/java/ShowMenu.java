@@ -14,7 +14,6 @@ public class ShowMenu {
     public void show() {
         do {
             int item = 0;
-            int price = 0;
 
             menu.mainManu();
 
@@ -28,43 +27,11 @@ public class ShowMenu {
                     menu.enterWhatMenu();
                     menu.itemsMenu();
                     item = menu.menuTotalPriceEnter();
-                    price = menu.menuTotalPriceEnter();
-                    break;
-                case 3:
-                    menu.enterWhatMenu();
-                    menu.itemsMenu();
-                    item = menu.menuTotalPriceEnter();
-                    price = menu.menuTotalPriceEnter();
-                   // dataCreator.flowersShowBouqet(item, price);
-
-                    break;
-                case 4:
-                    menu.priceEnter();
-                    item = menu.menuTotalPriceEnter();
-                    //menu.distEnter();
-                    price = menu.menuTotalPriceEnter();
-                    //dataCreator.findByPriceAndDistToSchool(price, dist);
-                    break;
-                /*case 5:
-                    menu.priceEnter();
-                    menu.menuTotalPriceEnter();
-                    menu.distEnter();
-                    dist = menu.menuTotalPriceEnter();
-                    dataCreator.findByPriceAndDistToKinderGargen(price, dist);
-                    break;
-                case 6:
-                    menu.priceEnter();
-                    menu.menuTotalPriceEnter();
-                    menu.distEnter();
-                    dist = menu.menuTotalPriceEnter();
-                    dataCreator.findByPriceAndDistToHospital(price, dist);
-                    break;
-                case 7:
-                    dataCreator.sortItemList();
+                    cleansFabric.showLocationData(item);
                     break;
                 case 8:
                     exit = true;
-                    break;*/
+                    break;
                 default:
                     System.out.println("Try again...");
             }

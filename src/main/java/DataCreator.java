@@ -57,6 +57,24 @@ public class DataCreator {
         return digit;
     }
 
+    public String localChooser(int i){
+        String location = "";
+        switch (i){
+            case 1:
+                location = "Room";
+                break;
+            case 2:
+                location = "Bath";
+                break;
+            case 3:
+                location = "Windows";
+                break;
+            default:
+                System.out.println("Try again...");
+        }
+        return location;
+    }
+
     public List getAllData() {
         return allData;
     }

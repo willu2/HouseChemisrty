@@ -8,13 +8,10 @@ public class MenuBuillder {
         System.out.println("Menu :> ");
         System.out.println(" 1 :> Show all cleener sets ");
         System.out.println(" 2 :> Choose cleener sets  >>> ");
-        System.out.println(" 3 :> Createte bouquet  >>> ");
-        //System.out.println(" 4 :> Show by price >>> ");
         System.out.println(" 8 :> Exit ");
 
         System.out.println("Enter position :> ");
     }
-
 
     public void enterWhatMenu(){
         System.out.println("What do you want to clean: ");
@@ -25,11 +22,6 @@ public class MenuBuillder {
         System.out.println("2 :> BathRoom ");
         System.out.println("3 :> Windows ");
     }
-
-    public void priceEnter(){
-        System.out.println("Enter your money count:");
-    }
-
 
     public int menuTotalPriceEnter(){
         int visitorPrice = 0;

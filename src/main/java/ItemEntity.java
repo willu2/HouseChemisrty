@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.Random;
 
-public abstract class ItemEntity {
+public abstract class ItemEntity implements Comparable<ItemEntity>{
 
     public Integer price;
     public String name;

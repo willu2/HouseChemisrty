@@ -2,7 +2,7 @@
 public class RoomSet extends ItemEntity implements databBaseImpl{
 
     private String roomCL = "RoomCleaner-";
-    private String roomTP = "Room ";
+    private String roomTP = "Room";
 
     public RoomSet() {
         super();
