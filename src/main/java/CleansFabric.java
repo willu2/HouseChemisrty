@@ -23,6 +23,7 @@ public class CleansFabric {
     }
 
 
+    //print all db data
     public void showAllData(){
 
         for (Iterator<ItemEntity> it = allData.iterator(); it.hasNext(); ) {
@@ -31,6 +32,7 @@ public class CleansFabric {
         }
     }
 
+    //print data by location number
     public void showLocationData(int i){
         String loc = dataCreator.localChooser(i);
         Collections.sort(allData);

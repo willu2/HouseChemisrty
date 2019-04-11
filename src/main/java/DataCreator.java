@@ -18,6 +18,7 @@ public class DataCreator {
         createwindowSet(w);
     }
 
+    //random data add to base
     public void createRoomSet(int r){
         for (int i = 0; i < r; i++){
             roomSet = new RoomSet();

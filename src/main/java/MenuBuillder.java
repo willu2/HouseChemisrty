@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/* text menu creator */
 public class MenuBuillder {
 
     public void mainManu(){

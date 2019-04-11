@@ -1,12 +1,11 @@
 
 public class WindowSet extends ItemEntity implements databBaseImpl {
 
-    private String windowCL = "WindowCleaner-";
-    private String windowTP = "Windows";
+    private String windowCL = "WindowCleaner-"; //cleaner name
+    private String windowTP = "Windows";  //location type
 
     public WindowSet() {
         super();
-
     }
 
     public WindowSet(String name, String type, Integer price) {

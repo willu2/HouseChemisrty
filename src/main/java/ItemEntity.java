@@ -1,5 +1,3 @@
-import java.util.List;
-import java.util.Random;
 
 public abstract class ItemEntity implements Comparable<ItemEntity>{
 
@@ -47,11 +45,5 @@ public abstract class ItemEntity implements Comparable<ItemEntity>{
 
     public int compareTo(ItemEntity o) {
         return this.getPrice().compareTo(o.getPrice());
-    }
-
-    public int ranDig(int ran){
-        Random random = new Random();
-        int digit = random.nextInt(ran) + 12;
-        return digit;
     }
 }
