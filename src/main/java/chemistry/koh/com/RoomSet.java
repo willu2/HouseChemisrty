@@ -1,3 +1,4 @@
+package chemistry.koh.com;
 
 public class RoomSet extends ItemEntity implements databBaseImpl{
 

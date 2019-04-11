@@ -1,3 +1,4 @@
+package chemistry.koh.com;
 
 public abstract class ItemEntity implements Comparable<ItemEntity>{
 
